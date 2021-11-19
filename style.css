@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+  overflow: hidden;
+  color: white;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+body {
+  background-color: rgb(0, 27, 51);
+}
+.circle-bg {
+  position: absolute;
+  z-index: -1;
+}
+.circle {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(120deg, rgb(0, 255, 255), rgb(0, 174, 255));
+  border-radius: 50%;
+}
+.c-1 {
+  height: 500px;
+  width: 500px;
+  bottom: -80px;
+  right: -80px;
+  background: linear-gradient(20deg, rgb(2, 219, 219), rgb(17, 151, 212));
+}
+.c-2 {
+  height: 300px;
+  width: 300px;
+  top: -80px;
+  left: -80px;
+  background: linear-gradient(150deg, rgb(1, 156, 156), rgb(69, 189, 245));
+}
+.c-3 {
+  bottom: -50px;
+  left: -30px;
+  background: linear-gradient(200deg, rgb(0, 255, 255), rgb(0, 174, 255));
+}
+.c-4 {
+  bottom: 100px;
+  left: 500px;
+  height: 300px;
+  width: 300px;
+}
+.c-5 {
+  top: 40px;
+  right: 500px;
+  background: linear-gradient(200deg, rgb(122, 250, 250) rgb(23, 134, 185));
+}
+.container {
+  width: 80vw;
+  height: 90vh;
+  margin: 5vh 10vw;
+  background-color: rgba(197, 228, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 10px;
+  position: relative;
+  box-shadow: 0 0 5px rgb(0, 225, 255);
+  padding: 10px;
+}
+.container nav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: calc(100% - 20px);
+  width: 30%;
+  background-color: transparent;
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+}
+.links {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+}
+.links li {
+  cursor: pointer;
+  letter-spacing: 2px;
+  height: 50px;
+  width: 70%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  line-height: 50px;
+  border-radius: 10px;
+}
+.links li:hover {
+  letter-spacing: 5px;
+}
+.content {
+  width: 60%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.content h2 {
+  font-size: 5rem;
+  margin-bottom: 50px;
+  position: relative;
+  font-family: "Lobster", cursive;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+}
+.content h2::after {
+  content: "";
+  height: 5px;
+  width: 60%;
+  margin: 0 20%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: white;
+}
+.content p {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
